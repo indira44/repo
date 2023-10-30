@@ -1,0 +1,56 @@
+mkdir github1  (1)
+
+git init
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /
+$ cd github1
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ touch git1.txt
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ ls -li
+total 1
+1125899906844998 -rw-r--r-- 1 CHINNU 197121 30 Oct 30 10:33 git1.txt
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ vi git1.txt
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ git commit -m "This is tesxtfile1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'CHINNU@DESKTOP-F6DA9KA.(none)')
+
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ git config --global user.email "indirapalem.com"
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ git commit -m "This is tesxtfile1"
+[master (root-commit) 21cb08c] This is tesxtfile1
+ 1 file changed, 2 insertions(+)
+ create mode 100644 git1.txt
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$ cat git1.txt
+this is file 1
+this is file 2
+
+CHINNU@DESKTOP-F6DA9KA MINGW64 /github1 (master)
+$
